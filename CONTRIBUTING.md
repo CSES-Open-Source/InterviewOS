@@ -3,7 +3,7 @@
 We're excited you want to help build InterviewOS! This guide covers how to install the project, run it locally, and submit your work.
 
 > [!NOTE]
-> The project is still being set up. Some commands below will start working once the starter code is merged.
+> The project is still being set up. The database schema has no models yet, so `npx prisma migrate dev` has nothing to apply until the first schema PR is merged.
 
 ## Installation
 
@@ -88,6 +88,12 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 npm run lint
 ```
 
+### Check types
+
+```bash
+npm run typecheck
+```
+
 ### Build the app
 
 Always run a build before you open a PR. This catches errors that `npm run dev` can miss.
@@ -137,7 +143,10 @@ Use [Conventional Commits](https://www.conventionalcommits.org/) to keep history
 
 - [ ] Your branch is up to date with `main`
 - [ ] `npm run lint` passes
+- [ ] `npm run typecheck` passes
 - [ ] `npm run build` passes
+
+GitHub Actions runs lint, typecheck, build, and a secret scan on every PR. Make sure all checks pass before asking for a merge.
 - [ ] You tested your change by hand
 - [ ] You added tests where it makes sense
 - [ ] You added a screenshot or screen recording for UI changes
