@@ -146,7 +146,7 @@ Use [Conventional Commits](https://www.conventionalcommits.org/) to keep history
 - [ ] `npm run typecheck` passes
 - [ ] `npm run build` passes
 
-GitHub Actions runs lint, typecheck, build, and a secret scan on every PR. Make sure all checks pass before asking for a merge.
+GitHub Actions runs lint, typecheck, build, and a secret scan on every PR. These checks must pass before a PR can merge. Make sure all checks pass before asking for a merge.
 - [ ] You tested your change by hand
 - [ ] You added tests where it makes sense
 - [ ] You added a screenshot or screen recording for UI changes

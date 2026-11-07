@@ -39,7 +39,7 @@ npx prisma migrate dev
 npx prisma studio
 ```
 
-Run lint, typecheck, and build before calling work done. CI runs the same three on every PR, plus a TruffleHog secret scan.
+Run lint, typecheck, and build before calling work done. CI runs the same three on every PR, plus a TruffleHog secret scan. Both are required to merge.
 
 ## Conventions
 
