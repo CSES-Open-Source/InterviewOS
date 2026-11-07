@@ -39,7 +39,7 @@ npx prisma migrate dev
 npx prisma studio
 ```
 
-Run lint, typecheck, and build before calling work done. CI runs the same three on every PR, plus a TruffleHog secret scan.
+Run lint, typecheck, and build before calling work done. CI runs the same three on every PR, plus a TruffleHog secret scan. Both are required to merge.
 
 ## Conventions
 
@@ -48,6 +48,7 @@ Run lint, typecheck, and build before calling work done. CI runs the same three 
 - **PRs:** `main` is protected. Every change goes through a PR with 1 approval from someone other than the author, and this also applies to admins. Fill out the PR template, link the issue with `Closes #12`, and keep each PR to one feature or fix.
 - **Components:** use shadcn/ui when a component exists. Keep components small and reusable.
 - **Prisma:** server code only. Never import it in a client component.
+- **AI tools:** follow "Using AI Tools" in CONTRIBUTING.
 
 ## Watch Out For
 
