@@ -166,6 +166,51 @@ GitHub Actions runs lint, typecheck, build, and a secret scan on every PR. Make 
 
 ---
 
+## Using AI Tools
+
+AI tools are welcome on InterviewOS. Use them to learn, plan, debug, and write code faster. Use whichever tool you like, but you own everything you submit.
+
+### Ground Rules
+
+- **Understand your code.** If you can't explain a change in review, don't submit it yet.
+- **Test it yourself.** Run `npm run lint`, `npm run typecheck`, and `npm run build`, then try the feature. Passing CI doesn't prove it works.
+- **Keep secrets out.** Never paste `.env` values, API keys, passwords, or anyone's personal information into an AI tool.
+- **Check the docs.** AI tools often suggest outdated code, so compare it with the docs for our versions of Next.js, Prisma, and Tailwind.
+- **Check new packages.** AI tools can suggest packages that are outdated or don't exist. Confirm a package on npm, and say why you added it in your PR.
+- **Keep PRs small.** One feature or fix per PR, even if a tool generated more.
+- **Follow our conventions.** Point your tool to `CLAUDE.md` and this file before it writes code. Claude Code reads `CLAUDE.md` automatically.
+- **Don't commit tool files.** Leave out folders like `.claude/`, `.agents/`, and `.windsurf/`.
+
+### Take Extra Care With
+
+Slow down and tell your reviewer when an AI tool helped with any of these:
+
+- Login and permissions
+- Running code that users submit
+- Database schema changes and migrations
+- API keys and LiveKit room tokens
+
+### Reviewing PRs
+
+Review AI-written code like any other code. You can use an AI tool for a first pass, but a teammate still needs to read the change and approve it.
+
+### Prompts That Work
+
+- **Learn:** "Explain how this route creates a LiveKit token, step by step. What could go wrong?"
+- **Plan:** "Read `CLAUDE.md` and this issue. List the files you'd change and your plan, but don't write code yet."
+- **Debug:** "Here's the error and the function. Find the cause and explain it before suggesting a fix."
+- **Review:** "Review this diff for bugs, missing error handling, and exposed secrets."
+
+Avoid prompts like "build the whole mock interview feature." Big requests produce big PRs that are hard to understand and review. Break the work into small steps, and check each one.
+
+### Resources
+
+- [Claude Code docs](https://code.claude.com/docs)
+- [GitHub Copilot docs](https://docs.github.com/en/copilot)
+- [`CLAUDE.md`](CLAUDE.md): our project context for AI tools
+
+---
+
 ## Issue Labels
 
 When opening issues or reviewing pull requests, please apply the most relevant label(s). This helps the team sort and prioritize work.
