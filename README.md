@@ -56,3 +56,7 @@ This project is licensed under the [MIT License](LICENSE).
 ## Contact
 
 For issues or questions, reach out to Yashmit (Engineering Manager) at **ybhaverisetti@ucsd.edu** or contact the UC San Diego CSES Open Source Society.
+
+## Contributors
+
+- @VaidikNadheria
