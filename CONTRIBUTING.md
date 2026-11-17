@@ -11,7 +11,7 @@ We're excited you want to help build InterviewOS! This guide covers how to insta
 
 Make sure you have these installed:
 
-- [Node.js](https://nodejs.org/) version 20 or newer (the LTS version is best)
+- [Node.js](https://nodejs.org/) version 22 or newer (the LTS version is best)
 - [npm](https://www.npmjs.com/) (comes with Node.js)
 - [Git](https://git-scm.com/)
 - [PostgreSQL](https://www.postgresql.org/download/) running locally, or a free hosted Postgres database (ask the EM for the shared dev database)
