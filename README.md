@@ -49,6 +49,11 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for how to install, set up, and run the p
 
 We welcome contributions! Please see our [CONTRIBUTING.md](CONTRIBUTING.md) for details on installation, development setup, and how to submit pull requests. Please also read our [Code of Conduct](CODE_OF_CONDUCT.md).
 
+## Contributors
+
+- [Allghelierce](https://github.com/Allghelierce)
+- [ypesok28](https://github.com/ypesok28)
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
