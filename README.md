@@ -52,6 +52,7 @@ We welcome contributions! Please see our [CONTRIBUTING.md](CONTRIBUTING.md) for 
 ## Contributors
 
 - [Allghelierce](https://github.com/Allghelierce)
+- [ypesok28](https://github.com/ypesok28)
 
 ## License
 
