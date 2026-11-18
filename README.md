@@ -51,7 +51,9 @@ We welcome contributions! Please see our [CONTRIBUTING.md](CONTRIBUTING.md) for 
 
 ## Contributors
 
-- AayaanSayyad
+- [Allghelierce](https://github.com/Allghelierce)
+- [ypesok28](https://github.com/ypesok28)
+- [AayaanSayyad](https://github.come/AayaanSayyad)
 
 ## License
 
