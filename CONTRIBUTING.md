@@ -60,6 +60,19 @@ Then fill in the values in `.env`. Ask the EM for any keys you do not have.
 > [!WARNING]
 > Never commit your `.env` file. It is already in `.gitignore`.
 
+### Authentication setup (decision pending)
+
+There is no login implementation yet. `AUTH_SECRET` above is an Auth.js-specific
+placeholder, not a requirement for running the current landing page. Do not run
+`npx auth secret` or add campus credentials just to complete onboarding.
+
+The [Auth.js / Better Auth comparison](docs/research/auth-library-comparison.md)
+recommends Better Auth and lists the proposed environment variables, Prisma setup,
+and campus registration questions. Kyle and the EM still need to confirm the
+choice. Do not apply either library's auth schema until that decision is recorded.
+UCSD sign-in also needs campus-issued integration details; an `@ucsd.edu` email
+check is not equivalent to UCSD SSO.
+
 ### 3. Set up the database
 
 Run the database migrations:

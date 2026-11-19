@@ -11,6 +11,11 @@ Open decisions. Do not assume an answer or build around one:
 - **MVP scope:** not picked yet.
 - **Auth library:** Auth.js is planned, but it now gets security patches only, so Better Auth is under consideration. `AUTH_SECRET` and `npx auth secret` are Auth.js-specific and change if we switch.
 
+The [auth comparison](docs/research/auth-library-comparison.md) recommends Better
+Auth, pending agreement with Kyle and the EM's decision on #10. Campus SSO
+registration and a real UCSD login have not been verified. Do not treat the
+recommendation as authorization to install auth packages or change the schema.
+
 ## Planned Features
 
 1. **Live Mock Interviews:** video and audio with a shared code editor and whiteboard.
