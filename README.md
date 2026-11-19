@@ -1,15 +1,17 @@
 # InterviewOS
 
-An interview prep platform that turns the recruiting cycle into a game. Practice coding problems, run live mock interviews with peers, get resume reviews, and build your stories, all in one place.
+An interview prep hub that turns the recruiting cycle into a game. Run live mock interviews with peers, track your practice, get resume reviews, and build your stories, all in one place. InterviewOS links out to LeetCode for coding practice instead of replacing it.
 
 ## Why InterviewOS?
 
-Interview prep is spread across too many tools. People use LeetCode for problems, Google Docs for stories, Notion for tracking, and Zoom for mock interviews. InterviewOS brings all of this into one app. Streaks, badges, and weekly contests help you stay consistent.
+Interview prep is spread across too many tools. People use LeetCode for problems, Google Docs for stories, Notion for tracking, and Zoom for mock interviews. InterviewOS connects that preparation through peer sessions, progress tracking, and saved stories. Streaks, badges, and weekly contests are planned to help students stay consistent.
+
+The November 9 team discussion clarified that we are building a hub, not a competing LeetCode or NeetCode problem library. MVP features and the exact gamification rules still need the team's decision.
 
 ## Features
 
 - **Live Mock Interviews:** Video and audio calls with a shared code editor and a whiteboard.
-- **Progress Tracker:** Track solved problems, mock interview counts, and more.
+- **Progress Tracker:** Track LeetCode practice metrics, mock interview counts, and more, with links to external coding practice.
 - **Gamification:** Daily streaks, mastery badges, and weekly competitions.
 - **Peer Matching and Scheduling:** Get matched with a partner for mock interviews and resume reviews based on your career interests.
 - **Anecdote Vault:** Save your STAR stories and project write-ups in one place.

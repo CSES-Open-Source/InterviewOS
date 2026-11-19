@@ -1,6 +1,8 @@
 # InterviewOS
 
-Interview prep platform that turns the recruiting cycle into a game: coding challenges, peer mock interviews, and resume reviews in one app. Built by a CSES Open Source team at UC San Diego over the 2026-27 school year. See [README.md](README.md) for the overview and [CONTRIBUTING.md](CONTRIBUTING.md) for setup and team process.
+Interview prep hub that turns the recruiting cycle into a game: live peer mock interviews, progress tracking, saved stories, and resume reviews. Built by a CSES Open Source team at UC San Diego over the 2026-27 school year. See [README.md](README.md) for the overview and [CONTRIBUTING.md](CONTRIBUTING.md) for setup and team process.
+
+The November 9 scope is a hub that links out to LeetCode for coding practice, not a replacement for LeetCode or NeetCode. Do not assume we are building a full coding problem library. Any code-execution feature is a separate MVP decision.
 
 ## Status
 
@@ -14,7 +16,7 @@ Open decisions. Do not assume an answer or build around one:
 ## Planned Features
 
 1. **Live Mock Interviews:** video and audio with a shared code editor and whiteboard.
-2. **Progress Tracker:** solved problems, mock interview counts, and more.
+2. **Progress Tracker:** LeetCode practice metrics, mock interview counts, and links to external practice.
 3. **Gamification:** daily streaks, mastery badges, and weekly contests.
 4. **Peer Matching and Scheduling:** match partners by career interests.
 5. **Anecdote Vault:** STAR stories and project write-ups.
