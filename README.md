@@ -56,6 +56,7 @@ We welcome contributions! Please see our [CONTRIBUTING.md](CONTRIBUTING.md) for 
 - [Allghelierce](https://github.com/Allghelierce)
 - [ypesok28](https://github.com/ypesok28)
 - [AayaanSayyad](https://github.com/AayaanSayyad)
+- [VaidikNadheria](https://github.com/VaidikNadheria)
 
 ## License
 
