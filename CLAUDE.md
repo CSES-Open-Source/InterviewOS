@@ -9,12 +9,9 @@ Early development. The stack below is partly set up. No features exist yet.
 Open decisions. Do not assume an answer or build around one:
 
 - **MVP scope:** not picked yet.
-- **Auth library:** Auth.js is planned, but it now gets security patches only, so Better Auth is under consideration. `AUTH_SECRET` and `npx auth secret` are Auth.js-specific and change if we switch.
+- **UCSD SSO:** campus registration is not done, so the protocol (OIDC or SAML) and callback URLs are unknown. See the [auth comparison](docs/research/auth-library-comparison.md).
 
-The [auth comparison](docs/research/auth-library-comparison.md) recommends Better
-Auth, pending agreement with Kyle and the EM's decision on #10. Campus SSO
-registration and a real UCSD login have not been verified. Do not treat the
-recommendation as authorization to install auth packages or change the schema.
+Decided: **Better Auth** is the login library (#10). No auth code exists yet. Do not install auth packages or change the Prisma schema until an implementation issue exists.
 
 ## Planned Features
 
@@ -30,7 +27,7 @@ recommendation as authorization to install auth packages or change the schema.
 - **UI:** TailwindCSS and shadcn/ui
 - **Database:** PostgreSQL with Prisma ORM
 - **Real-time:** LiveKit (video and audio), Monaco Editor (code), Excalidraw (whiteboard)
-- **Login:** UCSD SSO (library undecided, see above)
+- **Login:** Better Auth with UCSD SSO (campus registration pending, see above)
 
 ## Commands
 
