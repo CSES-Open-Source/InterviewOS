@@ -1,20 +1,16 @@
 
 "use client";
 
-import type * as Monaco from "monaco-editor";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import Editor, { OnMount } from "@monaco-editor/react";
 
 type Language = "javascript" | "typescript" | "python";
 
 export default function BroadcastPrototypePage() {
-  const editorRef = useRef<Monaco.editor.IStandaloneCodeEditor | null>(null);
   const [language, setLanguage] = useState<Language>("javascript");
   const [status, setStatus] = useState("Starting...");
 
   const handleEditorMount: OnMount = (editor) => {
-    editorRef.current = editor;
-
     const channel = new BroadcastChannel(
       "interviewos-broadcast-prototype"
     );
@@ -72,21 +68,6 @@ hello();`;
     });
   };
 
-  const handleLanguageChange = (
-    event: React.ChangeEvent<HTMLSelectElement>
-  ) => {
-    const newLanguage = event.target.value as Language;
-    setLanguage(newLanguage);
-
-    const model = editorRef.current?.getModel();
-
-    if (model) {
-      import("monaco-editor").then((monaco) => {
-        monaco.editor.setModelLanguage(model, newLanguage);
-      });
-    }
-  };
-
   return (
     <main className="min-h-screen bg-background p-6">
       <div className="mx-auto max-w-7xl">
@@ -103,7 +84,7 @@ hello();`;
             Language:{" "}
             <select
               value={language}
-              onChange={handleLanguageChange}
+              onChange={(event) => setLanguage(event.target.value as Language)}
               className="rounded border px-2 py-1"
             >
               <option value="javascript">JavaScript</option>
@@ -116,7 +97,7 @@ hello();`;
         <div className="overflow-hidden rounded-lg border">
           <Editor
             height="70vh"
-            defaultLanguage={language}
+            language={language}
             theme="vs-dark"
             defaultValue=""
             onMount={handleEditorMount}
