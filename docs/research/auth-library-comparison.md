@@ -2,6 +2,8 @@
 
 Research date: November 19, 2026. Related to [#10](https://github.com/CSES-Open-Source/InterviewOS/issues/10).
 
+**Decision (November 23, 2026):** the team chose Better Auth. Kyle agreed in review, and the EM recorded the decision on #10. Campus registration is still open.
+
 ## Recommendation
 
 I recommend Better Auth for our new Next.js app, with Prisma and PostgreSQL. The maintainers recommend it for new projects, and both its Next.js integration and Prisma adapter fit our stack. This is a recommendation for Kyle and the EM to review, not a recorded team decision.
@@ -41,9 +43,9 @@ Checking possession of an `@ucsd.edu` mailbox could be a separate pilot option i
 
 ## Proposed CONTRIBUTING and environment changes
 
-No auth package, runtime configuration, or database migration is added by this research. Keep the current scaffold working while the decision is open.
+No auth package, runtime configuration, or database migration is added by this research. Keep the current scaffold working until implementation starts.
 
-If Better Auth is approved:
+With Better Auth chosen:
 
 | Variable | Proposed use |
 | --- | --- |
@@ -68,11 +70,11 @@ Implementation steps to document after approval:
 ## What can be marked done
 
 - Research and recommendation: ready for review.
-- Kyle agreement: not yet recorded.
-- EM decision: not yet recorded.
+- Kyle agreement: recorded in the review of #19.
+- EM decision: Better Auth, recorded on #10 (November 23, 2026).
 - Campus registration and real UCSD sign-in: not completed.
 
-Issue #10 should remain open until the EM records a decision. The later implementation must separately prove that campus sign-in works.
+Issue #10 is closed now that the decision is recorded. The later implementation must separately prove that campus sign-in works.
 
 ## Sources
 

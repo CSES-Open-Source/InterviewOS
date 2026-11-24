@@ -35,9 +35,9 @@ Interview prep is spread across too many tools. People use LeetCode for problems
 
 ### Authentication
 
-- UCSD SSO is planned; the login library is not decided yet. See the
-  [Auth.js / Better Auth comparison](docs/research/auth-library-comparison.md)
-  for the recommendation and campus integration questions.
+- [Better Auth](https://better-auth.com/) with UCSD SSO. Campus registration is
+  still in progress. See the [comparison](docs/research/auth-library-comparison.md)
+  for why we chose it and the campus integration questions.
 
 ## Project Status
 

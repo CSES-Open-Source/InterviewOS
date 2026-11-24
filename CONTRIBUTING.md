@@ -52,7 +52,8 @@ Then fill in the values in `.env`. Ask the EM for any keys you do not have.
 | Variable                  | What it is for                                                         |
 | ------------------------- | ---------------------------------------------------------------------- |
 | `DATABASE_URL`            | Your PostgreSQL connection string                                      |
-| `AUTH_SECRET`             | A random secret for login sessions (run `npx auth secret` to make one) |
+| `BETTER_AUTH_SECRET`      | Secret for login sessions (run `openssl rand -base64 32` to make one)  |
+| `BETTER_AUTH_URL`         | The app's URL, `http://localhost:3000` in development                  |
 | `LIVEKIT_API_KEY`         | LiveKit API key (video calls)                                          |
 | `LIVEKIT_API_SECRET`      | LiveKit API secret (video calls)                                       |
 | `NEXT_PUBLIC_LIVEKIT_URL` | Your LiveKit server URL                                                |
@@ -60,18 +61,16 @@ Then fill in the values in `.env`. Ask the EM for any keys you do not have.
 > [!WARNING]
 > Never commit your `.env` file. It is already in `.gitignore`.
 
-### Authentication setup (decision pending)
+### Authentication setup
 
-There is no login implementation yet. `AUTH_SECRET` above is an Auth.js-specific
-placeholder, not a requirement for running the current landing page. Do not run
-`npx auth secret` or add campus credentials just to complete onboarding.
+We chose [Better Auth](https://better-auth.com/) for login (see #10 and the
+[comparison](docs/research/auth-library-comparison.md)). Login isn't built yet, so
+you don't need the auth variables to run the app, and you shouldn't add campus
+credentials just to complete onboarding.
 
-The [Auth.js / Better Auth comparison](docs/research/auth-library-comparison.md)
-recommends Better Auth and lists the proposed environment variables, Prisma setup,
-and campus registration questions. Kyle and the EM still need to confirm the
-choice. Do not apply either library's auth schema until that decision is recorded.
-UCSD sign-in also needs campus-issued integration details; an `@ucsd.edu` email
-check is not equivalent to UCSD SSO.
+Don't install auth packages or change the Prisma schema until there's an
+implementation issue. UCSD sign-in also needs campus-issued integration details,
+and an `@ucsd.edu` email check is not the same as UCSD SSO.
 
 ### 3. Set up the database
 
