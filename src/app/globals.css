@@ -128,20 +128,15 @@
     @apply font-sans;
   }
 }
-.remote-selection {
-  background-color: rgba(80, 150, 255, 0.35) !important;
+
+/* Remote cursors and selections in the Monaco prototype (src/app/prototype/monaco-binding.ts). */
+.yRemoteSelection {
+  background-color: rgba(80, 150, 255, 0.35);
 }
 
-.remote-cursor::after {
+.yRemoteSelectionHead {
+  position: absolute;
+  height: 100%;
   border-left: 2px solid #ff9f43;
-  margin-left: -1px;
-}
-
-.remote-selection {
-  background-color: rgba(80, 150, 255, 0.35) !important;
-}
-
-.remote-cursor {
-  border-left: 2px solid #ff9f43;
-  margin-left: -1px;
+  box-sizing: border-box;
 }
